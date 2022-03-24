@@ -9,7 +9,7 @@ __Time to execute__: 5 mins <br/>
 ---
 ## Description
 
-This proof shows how MongoDB Atlas Search provides the ability to group movies documents into years and genres categories. The proof will be executed using only the Atlas UI, however the execution can be translated to a MongoDB Driver, Compass, or Mongo Shell. The _movies_ collection from the [Atlas sample_mflix database](https://docs.atlas.mongodb.com/sample-data/available-sample-datasets/#available-sample-datasets) will be used, and specifically the _released_ date will be queried against and the _genres_ and _year_ fields will be faceted against. 
+This proof shows how MongoDB Atlas Search provides the ability to group movies documents into years and genres categories. The proof will be executed using the Atlas UI and Compass, however the execution can be translated to a MongoDB Driver or Mongo Shell. The _movies_ collection from the [Atlas sample_mflix database](https://docs.atlas.mongodb.com/sample-data/available-sample-datasets/#available-sample-datasets) will be used, and specifically the _released_ date will be queried against and the _genres_ and _year_ fields will be faceted against. 
 
 ---
 ## Setup
