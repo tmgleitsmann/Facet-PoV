@@ -30,7 +30,7 @@ __2. Configure Atlas Environment__
 * You can select either JSON Editor or Visual Editor
    ![New_FTS_Index](img/create_index.png)
 * For the Visual Editor:
-	![Visual_Editor](img/visual_editor.png)\
+	![Visual_Editor](img/visual_editor.png)
   * Select the _sample_mflix.movies_ namespace
   * Turn off Dynamic Mapping
   * Add field mappings for...
@@ -103,28 +103,28 @@ __1. Configure Atlas Search Query within Compass__
   * So we should be left with an aggregation stage on `$searchMeta` that looks like this: 
     <pre>
 	{
-     "facet": {
-       "operator": {
-         "near": {
-           "path": "released",
-           "origin": ISODate("1921-11-01T00:00:00.000+00:00"),
-           "pivot": 7776000000
-         }
-       },
-       "facets": {
-         "genresFacet": {
-           "type": "string",
-           "path": "genres"
-         },
-         "yearFacet" : {
-           "type" : "number",
-           "path" : "year",
-           "boundaries" : [1910,1920,1930,1940]
-         }
-       }
-     }
-   }
-	</pre>
+	     "facet": {
+	       "operator": {
+		 "near": {
+		   "path": "released",
+		   "origin": ISODate("1921-11-01T00:00:00.000+00:00"),
+		   "pivot": 7776000000
+		 }
+	       },
+	       "facets": {
+		 "genresFacet": {
+		   "type": "string",
+		   "path": "genres"
+		 },
+		 "yearFacet" : {
+		   "type" : "number",
+		   "path" : "year",
+		   "boundaries" : [1910,1920,1930,1940]
+		}
+	     }
+	   }
+	 }
+  </pre>
   * Feel free to copy and paste this aggregation instead
 
 * The pipeline will automatically be executed and the result should now look similar to the following image:
